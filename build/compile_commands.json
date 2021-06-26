@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/patryk/Pulpit/zad5_3-Patidzon/build",
+  "command": "/usr/bin/c++ -DENABLE_DOCTEST_IN_LIBRARY -I/home/patryk/Pulpit/zad5_3-Patidzon/build -I/home/patryk/Pulpit/zad5_3-Patidzon/inc -I/home/patryk/Pulpit/zad5_3-Patidzon/external/doctest/doctest -g -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/example.cpp.o -c /home/patryk/Pulpit/zad5_3-Patidzon/src/example.cpp",
+  "file": "/home/patryk/Pulpit/zad5_3-Patidzon/src/example.cpp"
+},
+{
+  "directory": "/home/patryk/Pulpit/zad5_3-Patidzon/build",
+  "command": "/usr/bin/c++ -DENABLE_DOCTEST_IN_LIBRARY -I/home/patryk/Pulpit/zad5_3-Patidzon/build -I/home/patryk/Pulpit/zad5_3-Patidzon/inc -I/home/patryk/Pulpit/zad5_3-Patidzon/external/doctest/doctest -g -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o -c /home/patryk/Pulpit/zad5_3-Patidzon/src/lacze_do_gnuplota.cpp",
+  "file": "/home/patryk/Pulpit/zad5_3-Patidzon/src/lacze_do_gnuplota.cpp"
+},
+{
+  "directory": "/home/patryk/Pulpit/zad5_3-Patidzon/build",
+  "command": "/usr/bin/c++ -DENABLE_DOCTEST_IN_LIBRARY -I/home/patryk/Pulpit/zad5_3-Patidzon/build -I/home/patryk/Pulpit/zad5_3-Patidzon/inc -I/home/patryk/Pulpit/zad5_3-Patidzon/external/doctest/doctest -g -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/main.dir/app/main.cpp.o -c /home/patryk/Pulpit/zad5_3-Patidzon/app/main.cpp",
+  "file": "/home/patryk/Pulpit/zad5_3-Patidzon/app/main.cpp"
+},
+{
+  "directory": "/home/patryk/Pulpit/zad5_3-Patidzon/build/tests",
+  "command": "/usr/bin/c++ -DENABLE_DOCTEST_IN_LIBRARY -I/home/patryk/Pulpit/zad5_3-Patidzon/build -I/home/patryk/Pulpit/zad5_3-Patidzon/inc -I/home/patryk/Pulpit/zad5_3-Patidzon/external/doctest/doctest -g -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/main.cpp.o -c /home/patryk/Pulpit/zad5_3-Patidzon/tests/main.cpp",
+  "file": "/home/patryk/Pulpit/zad5_3-Patidzon/tests/main.cpp"
+},
+{
+  "directory": "/home/patryk/Pulpit/zad5_3-Patidzon/build/tests",
+  "command": "/usr/bin/c++ -DENABLE_DOCTEST_IN_LIBRARY -I/home/patryk/Pulpit/zad5_3-Patidzon/build -I/home/patryk/Pulpit/zad5_3-Patidzon/inc -I/home/patryk/Pulpit/zad5_3-Patidzon/external/doctest/doctest -g -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/dummy.cpp.o -c /home/patryk/Pulpit/zad5_3-Patidzon/tests/dummy.cpp",
+  "file": "/home/patryk/Pulpit/zad5_3-Patidzon/tests/dummy.cpp"
+}
+]
