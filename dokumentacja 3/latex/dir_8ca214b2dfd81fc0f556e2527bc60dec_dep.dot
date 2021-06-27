@@ -1,0 +1,15 @@
+digraph "/home/patryk/Pulpit/zad5_3-Patidzon/tests/doctest" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_1a9561e4a421ba0267177bf1387cae15 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="tests" fontname="Helvetica", fontsize="10", URL="dir_1a9561e4a421ba0267177bf1387cae15.html"]
+  subgraph clusterdir_8ca214b2dfd81fc0f556e2527bc60dec {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_8ca214b2dfd81fc0f556e2527bc60dec.html"];
+    dir_8ca214b2dfd81fc0f556e2527bc60dec [shape=plaintext label="doctest"];
+    dir_ffa45dae946e3f5883413b9ada1e0fbb [shape=box label="extensions" color="red" fillcolor="white" style="filled" URL="dir_ffa45dae946e3f5883413b9ada1e0fbb.html"];
+    dir_122ff119480b204f8080d4d2b594e985 [shape=box label="parts" color="black" fillcolor="white" style="filled" URL="dir_122ff119480b204f8080d4d2b594e985.html"];
+    dir_397572eb19268a28dbca001eeb989a63 [shape=box label="translation.pyi" color="red" fillcolor="white" style="filled" URL="dir_397572eb19268a28dbca001eeb989a63.html"];
+  }
+  }
+}

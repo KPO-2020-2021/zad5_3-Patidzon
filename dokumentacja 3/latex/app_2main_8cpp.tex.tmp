@@ -1,0 +1,107 @@
+\hypertarget{app_2main_8cpp}{}\doxysection{/home/patryk/\+Pulpit/zad5\+\_\+3-\/\+Patidzon/app/main.cpp File Reference}
+\label{app_2main_8cpp}\index{/home/patryk/Pulpit/zad5\_3-\/Patidzon/app/main.cpp@{/home/patryk/Pulpit/zad5\_3-\/Patidzon/app/main.cpp}}
+
+
+Przykład animacji przelotu drona.  
+
+
+{\ttfamily \#include \char`\"{}example\+Config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}example.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}lacze\+\_\+do\+\_\+gnuplota.\+hh\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}size.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dron.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}brylawzorcowa.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vector.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}prostopadloscian.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}graniastoslup.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scena.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}matrix.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include \char`\"{}przeszkoda.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+Include dependency graph for main.\+cpp\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{app_2main_8cpp_a7d104782d6322f7698c1486b6e00d6c1}{I\+L\+O\+S\+C\+\_\+\+W\+I\+E\+R\+Z\+\_\+\+L\+I\+N\+I\+I\+\_\+\+T\+W\+O\+R\+Z\+A\+C\+EJ}}~4
+\item 
+\#define \mbox{\hyperlink{app_2main_8cpp_ab9d785760df7d38b8c4fe1d84f4d978d}{P\+L\+I\+K\+\_\+\+W\+Z\+O\+R\+C\+O\+W\+E\+G\+O\+\_\+\+S\+Z\+E\+S\+C\+I\+A\+NU}}~\char`\"{}../bryly\+\_\+wzorcowe/szescian.\+dat\char`\"{}
+\item 
+\#define \mbox{\hyperlink{app_2main_8cpp_ac10437a5f7133af7fe8703e7e350105e}{P\+L\+I\+K\+\_\+\+W\+Z\+O\+R\+C\+O\+W\+E\+G\+O\+\_\+\+G\+R\+A\+N\+I\+A\+S\+T\+O\+S\+L\+U\+P\+A6}}~\char`\"{}../bryly\+\_\+wzorcowe/graniastoslup6.\+dat\char`\"{}
+\item 
+\#define \mbox{\hyperlink{app_2main_8cpp_ab954ab5c53b1cd693c5bb1d24b25db4a}{P\+L\+I\+K\+\_\+\+K\+O\+R\+P\+U\+S\+U\+\_\+\+D\+R\+O\+N\+A1}}~\char`\"{}../dat/korpus\+\_\+drana1.\+dat\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{app_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Przykład animacji przelotu drona. 
+
+Przykład ten ma tylko i wyłącznie za zadanie pokazanie efektów animacji lotu drona. Kod w nim zawarty nie jest pisany w sposób obiektowo zorientowany. Dlatego też nie należy wzorować się na nim. Niemniej można się wzorować na ciągu operacji, które należy wykonać, aby otrzymać właściwą animację. 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{app_2main_8cpp_a7d104782d6322f7698c1486b6e00d6c1}\label{app_2main_8cpp_a7d104782d6322f7698c1486b6e00d6c1}} 
+\index{main.cpp@{main.cpp}!ILOSC\_WIERZ\_LINII\_TWORZACEJ@{ILOSC\_WIERZ\_LINII\_TWORZACEJ}}
+\index{ILOSC\_WIERZ\_LINII\_TWORZACEJ@{ILOSC\_WIERZ\_LINII\_TWORZACEJ}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{ILOSC\_WIERZ\_LINII\_TWORZACEJ}{ILOSC\_WIERZ\_LINII\_TWORZACEJ}}
+{\footnotesize\ttfamily \#define I\+L\+O\+S\+C\+\_\+\+W\+I\+E\+R\+Z\+\_\+\+L\+I\+N\+I\+I\+\_\+\+T\+W\+O\+R\+Z\+A\+C\+EJ~4}
+
+
+
+Definition at line 52 of file main.\+cpp.
+
+\mbox{\Hypertarget{app_2main_8cpp_ab954ab5c53b1cd693c5bb1d24b25db4a}\label{app_2main_8cpp_ab954ab5c53b1cd693c5bb1d24b25db4a}} 
+\index{main.cpp@{main.cpp}!PLIK\_KORPUSU\_DRONA1@{PLIK\_KORPUSU\_DRONA1}}
+\index{PLIK\_KORPUSU\_DRONA1@{PLIK\_KORPUSU\_DRONA1}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{PLIK\_KORPUSU\_DRONA1}{PLIK\_KORPUSU\_DRONA1}}
+{\footnotesize\ttfamily \#define P\+L\+I\+K\+\_\+\+K\+O\+R\+P\+U\+S\+U\+\_\+\+D\+R\+O\+N\+A1~\char`\"{}../dat/korpus\+\_\+drana1.\+dat\char`\"{}}
+
+
+
+Definition at line 56 of file main.\+cpp.
+
+\mbox{\Hypertarget{app_2main_8cpp_ac10437a5f7133af7fe8703e7e350105e}\label{app_2main_8cpp_ac10437a5f7133af7fe8703e7e350105e}} 
+\index{main.cpp@{main.cpp}!PLIK\_WZORCOWEGO\_GRANIASTOSLUPA6@{PLIK\_WZORCOWEGO\_GRANIASTOSLUPA6}}
+\index{PLIK\_WZORCOWEGO\_GRANIASTOSLUPA6@{PLIK\_WZORCOWEGO\_GRANIASTOSLUPA6}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{PLIK\_WZORCOWEGO\_GRANIASTOSLUPA6}{PLIK\_WZORCOWEGO\_GRANIASTOSLUPA6}}
+{\footnotesize\ttfamily \#define P\+L\+I\+K\+\_\+\+W\+Z\+O\+R\+C\+O\+W\+E\+G\+O\+\_\+\+G\+R\+A\+N\+I\+A\+S\+T\+O\+S\+L\+U\+P\+A6~\char`\"{}../bryly\+\_\+wzorcowe/graniastoslup6.\+dat\char`\"{}}
+
+
+
+Definition at line 55 of file main.\+cpp.
+
+\mbox{\Hypertarget{app_2main_8cpp_ab9d785760df7d38b8c4fe1d84f4d978d}\label{app_2main_8cpp_ab9d785760df7d38b8c4fe1d84f4d978d}} 
+\index{main.cpp@{main.cpp}!PLIK\_WZORCOWEGO\_SZESCIANU@{PLIK\_WZORCOWEGO\_SZESCIANU}}
+\index{PLIK\_WZORCOWEGO\_SZESCIANU@{PLIK\_WZORCOWEGO\_SZESCIANU}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{PLIK\_WZORCOWEGO\_SZESCIANU}{PLIK\_WZORCOWEGO\_SZESCIANU}}
+{\footnotesize\ttfamily \#define P\+L\+I\+K\+\_\+\+W\+Z\+O\+R\+C\+O\+W\+E\+G\+O\+\_\+\+S\+Z\+E\+S\+C\+I\+A\+NU~\char`\"{}../bryly\+\_\+wzorcowe/szescian.\+dat\char`\"{}}
+
+
+
+Definition at line 54 of file main.\+cpp.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{app_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{app_2main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 66 of file main.\+cpp.
+

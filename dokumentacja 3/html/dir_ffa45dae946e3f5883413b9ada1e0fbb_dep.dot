@@ -1,0 +1,13 @@
+digraph "/home/patryk/Pulpit/zad5_3-Patidzon/tests/doctest/extensions" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_8ca214b2dfd81fc0f556e2527bc60dec {
+    graph [ bgcolor="#ddddee", pencolor="black", label="doctest" fontname="Helvetica", fontsize="10", URL="dir_8ca214b2dfd81fc0f556e2527bc60dec.html"]
+  subgraph clusterdir_ffa45dae946e3f5883413b9ada1e0fbb {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_ffa45dae946e3f5883413b9ada1e0fbb.html"];
+    dir_ffa45dae946e3f5883413b9ada1e0fbb [shape=plaintext label="extensions"];
+    dir_ab277f989017de2cb0b029f6975b2cdf [shape=box label="synchronize.pyi" color="black" fillcolor="white" style="filled" URL="dir_ab277f989017de2cb0b029f6975b2cdf.html"];
+  }
+  }
+}

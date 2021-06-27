@@ -1,0 +1,156 @@
+\hypertarget{classscena}{}\doxysection{scena Class Reference}
+\label{classscena}\index{scena@{scena}}
+
+
+~\newline
+  
+
+
+
+
+{\ttfamily \#include $<$scena.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classscena_a152626dcaf5c3bbb9c803a3134999d2f}{scena}} ()
+\item 
+\mbox{\hyperlink{classscena_aa0b947c3da8ee0b091e41c11f18dab60}{$\sim$scena}} ()
+\item 
+void \mbox{\hyperlink{classscena_a63c325bf0246fb67a6d09673466f5aec}{dodajprzeszkode}} (\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&Lacze)
+\begin{DoxyCompactList}\small\item\em Metoda klasy scena. $\vert$ $\vert$ dodaje przeszkode do listy shared pointerow $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ Lacze-\/lacze do gnuplota $\vert$. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classscena_a0bf8721ca9659fab66f466f574a9b67b}{usunprzeszkode}} (\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&Lacze)
+\begin{DoxyCompactList}\small\item\em Metoda klasy scena. $\vert$ $\vert$ usuwa przeszkode do listy shared pointerow wczesniej wyświetlajac liste obiektow $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ Lacze-\/lacze do gnuplota $\vert$. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classscena_a54c589f035a1d57aeaf518b2e5268b0e}{dodajdrona}} (int nr)
+\begin{DoxyCompactList}\small\item\em Metoda klasy scena. $\vert$ $\vert$ dodaje drona do sceny $\vert$. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classscena_ad7423a436d997205fafe913cc084fd4a}{animujdrona}} (\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&Lacze, int nr)
+\begin{DoxyCompactList}\small\item\em Metoda klasy scena. $\vert$ $\vert$ nie uzywana metoda (wersja beta) animacji drona dla sceny $\vert$. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classscena_af74c218c2de0fa49a01d2fe1e5b60b9c}{animacjalotu}} (\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} Lacze, int nr)
+\begin{DoxyCompactList}\small\item\em Metoda klasy scena. $\vert$ $\vert$ animuje przelot drona dla gnuplota $\vert$ $\vert$ przekonwertowana metoda drona $\vert$. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classscena_abba6ea2e8445394e549318f0be815c7c}{sprawdzmiejsceladowania}} (\mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$ polozenie1, int nr)
+\begin{DoxyCompactList}\small\item\em Metoda klasy scena. $\vert$ $\vert$ argumenty\+: $\vert$ $\vert$ polozenie1 -\/ aktualne polozenie aktywnego drona $\vert$ $\vert$ wywoluje metody sprawdzania miejsca ladowania dla przeszkod i nieaktywnego drona $\vert$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+~\newline
+ 
+
+klasa zawiera list shared pointerow oraz metody dodawania i usuwania z niej 
+
+Definition at line 37 of file scena.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classscena_a152626dcaf5c3bbb9c803a3134999d2f}\label{classscena_a152626dcaf5c3bbb9c803a3134999d2f}} 
+\index{scena@{scena}!scena@{scena}}
+\index{scena@{scena}!scena@{scena}}
+\doxysubsubsection{\texorpdfstring{scena()}{scena()}}
+{\footnotesize\ttfamily scena\+::scena (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 55 of file scena.\+h.
+
+\mbox{\Hypertarget{classscena_aa0b947c3da8ee0b091e41c11f18dab60}\label{classscena_aa0b947c3da8ee0b091e41c11f18dab60}} 
+\index{scena@{scena}!````~scena@{$\sim$scena}}
+\index{````~scena@{$\sim$scena}!scena@{scena}}
+\doxysubsubsection{\texorpdfstring{$\sim$scena()}{~scena()}}
+{\footnotesize\ttfamily scena\+::$\sim$scena (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 59 of file scena.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classscena_af74c218c2de0fa49a01d2fe1e5b60b9c}\label{classscena_af74c218c2de0fa49a01d2fe1e5b60b9c}} 
+\index{scena@{scena}!animacjalotu@{animacjalotu}}
+\index{animacjalotu@{animacjalotu}!scena@{scena}}
+\doxysubsubsection{\texorpdfstring{animacjalotu()}{animacjalotu()}}
+{\footnotesize\ttfamily void scena\+::animacjalotu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}}}]{Lacze,  }\item[{int}]{nr }\end{DoxyParamCaption})}
+
+
+
+Metoda klasy scena. $\vert$ $\vert$ animuje przelot drona dla gnuplota $\vert$ $\vert$ przekonwertowana metoda drona $\vert$. 
+
+$\vert$ 
+
+Definition at line 149 of file scena.\+h.
+
+\mbox{\Hypertarget{classscena_ad7423a436d997205fafe913cc084fd4a}\label{classscena_ad7423a436d997205fafe913cc084fd4a}} 
+\index{scena@{scena}!animujdrona@{animujdrona}}
+\index{animujdrona@{animujdrona}!scena@{scena}}
+\doxysubsubsection{\texorpdfstring{animujdrona()}{animujdrona()}}
+{\footnotesize\ttfamily void scena\+::animujdrona (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&}]{Lacze,  }\item[{int}]{nr }\end{DoxyParamCaption})}
+
+
+
+Metoda klasy scena. $\vert$ $\vert$ nie uzywana metoda (wersja beta) animacji drona dla sceny $\vert$. 
+
+$\vert$ 
+
+Definition at line 130 of file scena.\+h.
+
+\mbox{\Hypertarget{classscena_a54c589f035a1d57aeaf518b2e5268b0e}\label{classscena_a54c589f035a1d57aeaf518b2e5268b0e}} 
+\index{scena@{scena}!dodajdrona@{dodajdrona}}
+\index{dodajdrona@{dodajdrona}!scena@{scena}}
+\doxysubsubsection{\texorpdfstring{dodajdrona()}{dodajdrona()}}
+{\footnotesize\ttfamily void scena\+::dodajdrona (\begin{DoxyParamCaption}\item[{int}]{nr }\end{DoxyParamCaption})}
+
+
+
+Metoda klasy scena. $\vert$ $\vert$ dodaje drona do sceny $\vert$. 
+
+$\vert$ 
+
+Definition at line 120 of file scena.\+h.
+
+\mbox{\Hypertarget{classscena_a63c325bf0246fb67a6d09673466f5aec}\label{classscena_a63c325bf0246fb67a6d09673466f5aec}} 
+\index{scena@{scena}!dodajprzeszkode@{dodajprzeszkode}}
+\index{dodajprzeszkode@{dodajprzeszkode}!scena@{scena}}
+\doxysubsubsection{\texorpdfstring{dodajprzeszkode()}{dodajprzeszkode()}}
+{\footnotesize\ttfamily void scena\+::dodajprzeszkode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&}]{Lacze }\end{DoxyParamCaption})}
+
+
+
+Metoda klasy scena. $\vert$ $\vert$ dodaje przeszkode do listy shared pointerow $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ Lacze-\/lacze do gnuplota $\vert$. 
+
+$\vert$ 
+
+Definition at line 71 of file scena.\+h.
+
+\mbox{\Hypertarget{classscena_abba6ea2e8445394e549318f0be815c7c}\label{classscena_abba6ea2e8445394e549318f0be815c7c}} 
+\index{scena@{scena}!sprawdzmiejsceladowania@{sprawdzmiejsceladowania}}
+\index{sprawdzmiejsceladowania@{sprawdzmiejsceladowania}!scena@{scena}}
+\doxysubsubsection{\texorpdfstring{sprawdzmiejsceladowania()}{sprawdzmiejsceladowania()}}
+{\footnotesize\ttfamily bool scena\+::sprawdzmiejsceladowania (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$}]{polozenie1,  }\item[{int}]{nr }\end{DoxyParamCaption})}
+
+
+
+Metoda klasy scena. $\vert$ $\vert$ argumenty\+: $\vert$ $\vert$ polozenie1 -\/ aktualne polozenie aktywnego drona $\vert$ $\vert$ wywoluje metody sprawdzania miejsca ladowania dla przeszkod i nieaktywnego drona $\vert$. 
+
+$\vert$ 
+
+Definition at line 266 of file scena.\+h.
+
+\mbox{\Hypertarget{classscena_a0bf8721ca9659fab66f466f574a9b67b}\label{classscena_a0bf8721ca9659fab66f466f574a9b67b}} 
+\index{scena@{scena}!usunprzeszkode@{usunprzeszkode}}
+\index{usunprzeszkode@{usunprzeszkode}!scena@{scena}}
+\doxysubsubsection{\texorpdfstring{usunprzeszkode()}{usunprzeszkode()}}
+{\footnotesize\ttfamily void scena\+::usunprzeszkode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&}]{Lacze }\end{DoxyParamCaption})}
+
+
+
+Metoda klasy scena. $\vert$ $\vert$ usuwa przeszkode do listy shared pointerow wczesniej wyświetlajac liste obiektow $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ Lacze-\/lacze do gnuplota $\vert$. 
+
+$\vert$ 
+
+Definition at line 85 of file scena.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/patryk/\+Pulpit/zad5\+\_\+3-\/\+Patidzon/inc/\mbox{\hyperlink{scena_8h}{scena.\+h}}\end{DoxyCompactItemize}

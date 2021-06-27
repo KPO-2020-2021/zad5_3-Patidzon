@@ -1,0 +1,277 @@
+\hypertarget{class_matrix}{}\doxysection{Matrix$<$ S\+I\+ZE $>$ Class Template Reference}
+\label{class_matrix}\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+
+
+~\newline
+  
+
+
+
+
+{\ttfamily \#include $<$matrix.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_matrix_af8ed4d409be20420f32d67130a66035e}{Matrix}} (double\mbox{[}\mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}}\mbox{]})
+\begin{DoxyCompactList}\small\item\em Konstruktor parametryczny klasy \mbox{\hyperlink{class_matrix}{Matrix}}. $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ tmp -\/ dwuwymiarowa tablica z elementami typu double. $\vert$ $\vert$ Zwraca\+: $\vert$ $\vert$ Macierz wypelniona wartosciami podanymi w argumencie. $\vert$. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_matrix_a6ad13ada55f1e7c5b3a6aa8dc831209e}{Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \mbox{\hyperlink{class_matrix}{Matrix}}. $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ Brak argumentow. $\vert$ $\vert$ Zwraca\+: $\vert$ $\vert$ Macierz wypelnione wartoscia 0. $\vert$. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_matrix_ae6fe3cad5aeeca2b21e15fe73c0a5a01}{Matrix}} (char os, double kat)
+\begin{DoxyCompactList}\small\item\em konstruktor parametryczny macierzy $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ kat -\/ double, $\vert$ os-\/ char $\vert$ $\vert$ Wywoluje funkce zaladuj(x,y,z) dla wartosci argumentu $\vert$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$ \mbox{\hyperlink{class_matrix_acd0a31a8980b50dd58c1e9dab818eb55}{operator$\ast$}} (\mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$ tmp)
+\begin{DoxyCompactList}\small\item\em Realizuje mnozenie macierzy przez wektor. $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ this -\/ macierz, czyli pierwszy skladnik mnozenia, $\vert$ $\vert$ v -\/ wektor, czyli drugi skladnik mnozenia. $\vert$ $\vert$ Zwraca\+: $\vert$ $\vert$ Iloczyn dwoch skladnikow przekazanych jako wektor. $\vert$. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$ \mbox{\hyperlink{class_matrix_acbe3b78799335bc63cf6268b68d6b19b}{operator$\ast$}} (\mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$ tmp)
+\begin{DoxyCompactList}\small\item\em Realizuje mnozenie macierzy przez wektor. $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ this -\/ macierz, czyli pierwszy skladnik mnozenia, $\vert$ $\vert$ v -\/ wektor, czyli drugi skladnik mnozenia. $\vert$ $\vert$ Zwraca\+: $\vert$ $\vert$ Iloczyn dwoch skladnikow przekazanych jako wektor. $\vert$. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$ \mbox{\hyperlink{class_matrix_a924b76af78e5217f5fbc8b10f7879f91}{operator+}} (\mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$ tmp)
+\begin{DoxyCompactList}\small\item\em Przeciążenie dodawania macierzy $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ this -\/ macierz, czyli pierwszy skladnik dodawania, $\vert$ $\vert$ v -\/ wektor, czyli drugi skladnik dodawania. $\vert$ $\vert$ Zwraca\+: $\vert$ $\vert$ Macierz -\/ iloczyn dwóch podanych macierzy. $\vert$. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matrix_ae42a79944ea2dd479bd8aeb9b2a127e3}{zaladujz}} (double kat)
+\begin{DoxyCompactList}\small\item\em Metoda macierzy $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ kat -\/ double, $\vert$ $\vert$ Wypelnia macierz wartosciami $\vert$. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matrix_a461eb9ed503724d7427167ac7d5ec968}{zaladujx}} (double kat)
+\begin{DoxyCompactList}\small\item\em Metoda macierzy $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ kat -\/ double, $\vert$ $\vert$ Wypelnia macierz wartosciami $\vert$. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matrix_ab2c5244c271044a9d7f8766728209f1f}{zaladujy}} (double kat)
+\begin{DoxyCompactList}\small\item\em Metoda macierzy $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ kat -\/ double, $\vert$ $\vert$ Wypelnia macierz wartosciami $\vert$. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matrix_a5d55d35300b64d62aa2965517c1b1df9}{zaladuj}} (char os, double kat)
+\begin{DoxyCompactList}\small\item\em metoda klasy macierz $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ kat -\/ double, $\vert$ $\vert$ Wywoluje funkce zaladuj(x,y,z) dla wartosci argumentu $\vert$ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_matrix_ae9f1b3e53ba84d2ec102d96f04ada869}{operator==}} (\mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$ tmp)
+\begin{DoxyCompactList}\small\item\em Przeciazenie operatora == $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ tmp -\/ macierz. $\vert$. \end{DoxyCompactList}\item 
+double \& \mbox{\hyperlink{class_matrix_a4002e995b530bfcc464523dd39926005}{operator()}} (unsigned int row, unsigned int column)
+\begin{DoxyCompactList}\small\item\em Funktor macierzy $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ row -\/ numer wiersza. $\vert$ $\vert$ column -\/ numer kolumny. $\vert$ $\vert$ Zwraca\+: $\vert$ $\vert$ Wartosc macierzy w danym miejscu tablicy. $\vert$. \end{DoxyCompactList}\item 
+const double \& \mbox{\hyperlink{class_matrix_a76d4f095f8ee04310044df89a562901f}{operator()}} (unsigned int row, unsigned int column) const
+\begin{DoxyCompactList}\small\item\em Funktor macierzy $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ row -\/ numer wiersza. $\vert$ $\vert$ column -\/ numer kolumny. $\vert$ $\vert$ Zwraca\+: $\vert$ $\vert$ Wartosc macierzy w danym miejscu tablicy jako stala. $\vert$. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_matrix_ab2fc63d19c6f99fa1fe96383c1d51481}{wyznacznik}} () const
+\begin{DoxyCompactList}\small\item\em Metoda macierzy $\vert$ $\vert$ Zwraca\+: $\vert$ $\vert$ suma-\/wyznacznik macierzy $\vert$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$int S\+I\+ZE$>$\newline
+class Matrix$<$ S\+I\+Z\+E $>$}
+
+~\newline
+ 
+
+Szablon modeluje klase macierz sluzaca do przechowywania macierzy obrotu 
+
+Definition at line 25 of file matrix.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_matrix_af8ed4d409be20420f32d67130a66035e}\label{class_matrix_af8ed4d409be20420f32d67130a66035e}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$\+::\mbox{\hyperlink{class_matrix}{Matrix}} (\begin{DoxyParamCaption}\item[{double}]{tmp\mbox{[}\+S\+I\+Z\+E\mbox{]}\mbox{[}\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Konstruktor parametryczny klasy \mbox{\hyperlink{class_matrix}{Matrix}}. $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ tmp -\/ dwuwymiarowa tablica z elementami typu double. $\vert$ $\vert$ Zwraca\+: $\vert$ $\vert$ Macierz wypelniona wartosciami podanymi w argumencie. $\vert$. 
+
+$\vert$ 
+
+Definition at line 82 of file matrix.\+h.
+
+\mbox{\Hypertarget{class_matrix_a6ad13ada55f1e7c5b3a6aa8dc831209e}\label{class_matrix_a6ad13ada55f1e7c5b3a6aa8dc831209e}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$\+::\mbox{\hyperlink{class_matrix}{Matrix}}}
+
+
+
+Konstruktor klasy \mbox{\hyperlink{class_matrix}{Matrix}}. $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ Brak argumentow. $\vert$ $\vert$ Zwraca\+: $\vert$ $\vert$ Macierz wypelnione wartoscia 0. $\vert$. 
+
+$\vert$ 
+
+Definition at line 64 of file matrix.\+h.
+
+\mbox{\Hypertarget{class_matrix_ae6fe3cad5aeeca2b21e15fe73c0a5a01}\label{class_matrix_ae6fe3cad5aeeca2b21e15fe73c0a5a01}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$\+::\mbox{\hyperlink{class_matrix}{Matrix}} (\begin{DoxyParamCaption}\item[{char}]{os,  }\item[{double}]{kat }\end{DoxyParamCaption})}
+
+
+
+konstruktor parametryczny macierzy $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ kat -\/ double, $\vert$ os-\/ char $\vert$ $\vert$ Wywoluje funkce zaladuj(x,y,z) dla wartosci argumentu $\vert$ 
+
+$\vert$ 
+
+Definition at line 290 of file matrix.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_matrix_a4002e995b530bfcc464523dd39926005}\label{class_matrix_a4002e995b530bfcc464523dd39926005}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+double \& \mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$\+::operator() (\begin{DoxyParamCaption}\item[{unsigned int}]{row,  }\item[{unsigned int}]{column }\end{DoxyParamCaption})}
+
+
+
+Funktor macierzy $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ row -\/ numer wiersza. $\vert$ $\vert$ column -\/ numer kolumny. $\vert$ $\vert$ Zwraca\+: $\vert$ $\vert$ Wartosc macierzy w danym miejscu tablicy. $\vert$. 
+
+$\vert$ 
+
+Definition at line 122 of file matrix.\+h.
+
+\mbox{\Hypertarget{class_matrix_a76d4f095f8ee04310044df89a562901f}\label{class_matrix_a76d4f095f8ee04310044df89a562901f}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+const double \& \mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$\+::operator() (\begin{DoxyParamCaption}\item[{unsigned int}]{row,  }\item[{unsigned int}]{column }\end{DoxyParamCaption}) const}
+
+
+
+Funktor macierzy $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ row -\/ numer wiersza. $\vert$ $\vert$ column -\/ numer kolumny. $\vert$ $\vert$ Zwraca\+: $\vert$ $\vert$ Wartosc macierzy w danym miejscu tablicy jako stala. $\vert$. 
+
+$\vert$ 
+
+Definition at line 148 of file matrix.\+h.
+
+\mbox{\Hypertarget{class_matrix_acbe3b78799335bc63cf6268b68d6b19b}\label{class_matrix_acbe3b78799335bc63cf6268b68d6b19b}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$}]{tmp }\end{DoxyParamCaption})}
+
+
+
+Realizuje mnozenie macierzy przez wektor. $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ this -\/ macierz, czyli pierwszy skladnik mnozenia, $\vert$ $\vert$ v -\/ wektor, czyli drugi skladnik mnozenia. $\vert$ $\vert$ Zwraca\+: $\vert$ $\vert$ Iloczyn dwoch skladnikow przekazanych jako wektor. $\vert$. 
+
+$\vert$ 
+
+Definition at line 392 of file matrix.\+h.
+
+\mbox{\Hypertarget{class_matrix_acd0a31a8980b50dd58c1e9dab818eb55}\label{class_matrix_acd0a31a8980b50dd58c1e9dab818eb55}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$}]{tmp }\end{DoxyParamCaption})}
+
+
+
+Realizuje mnozenie macierzy przez wektor. $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ this -\/ macierz, czyli pierwszy skladnik mnozenia, $\vert$ $\vert$ v -\/ wektor, czyli drugi skladnik mnozenia. $\vert$ $\vert$ Zwraca\+: $\vert$ $\vert$ Iloczyn dwoch skladnikow przekazanych jako wektor. $\vert$. 
+
+$\vert$ 
+
+Definition at line 101 of file matrix.\+h.
+
+\mbox{\Hypertarget{class_matrix_a924b76af78e5217f5fbc8b10f7879f91}\label{class_matrix_a924b76af78e5217f5fbc8b10f7879f91}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$}]{tmp }\end{DoxyParamCaption})}
+
+
+
+Przeciążenie dodawania macierzy $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ this -\/ macierz, czyli pierwszy skladnik dodawania, $\vert$ $\vert$ v -\/ wektor, czyli drugi skladnik dodawania. $\vert$ $\vert$ Zwraca\+: $\vert$ $\vert$ Macierz -\/ iloczyn dwóch podanych macierzy. $\vert$. 
+
+$\vert$ 
+
+Definition at line 173 of file matrix.\+h.
+
+\mbox{\Hypertarget{class_matrix_ae9f1b3e53ba84d2ec102d96f04ada869}\label{class_matrix_ae9f1b3e53ba84d2ec102d96f04ada869}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+bool \mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$}]{tmp }\end{DoxyParamCaption})}
+
+
+
+Przeciazenie operatora == $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ tmp -\/ macierz. $\vert$. 
+
+$\vert$ 
+
+Definition at line 416 of file matrix.\+h.
+
+\mbox{\Hypertarget{class_matrix_ab2fc63d19c6f99fa1fe96383c1d51481}\label{class_matrix_ab2fc63d19c6f99fa1fe96383c1d51481}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!wyznacznik@{wyznacznik}}
+\index{wyznacznik@{wyznacznik}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{wyznacznik()}{wyznacznik()}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+double \mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$\+::wyznacznik}
+
+
+
+Metoda macierzy $\vert$ $\vert$ Zwraca\+: $\vert$ $\vert$ suma-\/wyznacznik macierzy $\vert$. 
+
+$\vert$ 
+
+Definition at line 343 of file matrix.\+h.
+
+\mbox{\Hypertarget{class_matrix_a5d55d35300b64d62aa2965517c1b1df9}\label{class_matrix_a5d55d35300b64d62aa2965517c1b1df9}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!zaladuj@{zaladuj}}
+\index{zaladuj@{zaladuj}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{zaladuj()}{zaladuj()}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+void \mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$\+::zaladuj (\begin{DoxyParamCaption}\item[{char}]{os,  }\item[{double}]{kat }\end{DoxyParamCaption})}
+
+
+
+metoda klasy macierz $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ kat -\/ double, $\vert$ $\vert$ Wywoluje funkce zaladuj(x,y,z) dla wartosci argumentu $\vert$ 
+
+$\vert$ 
+
+Definition at line 317 of file matrix.\+h.
+
+\mbox{\Hypertarget{class_matrix_a461eb9ed503724d7427167ac7d5ec968}\label{class_matrix_a461eb9ed503724d7427167ac7d5ec968}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!zaladujx@{zaladujx}}
+\index{zaladujx@{zaladujx}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{zaladujx()}{zaladujx()}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+void \mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$\+::zaladujx (\begin{DoxyParamCaption}\item[{double}]{kat }\end{DoxyParamCaption})}
+
+
+
+Metoda macierzy $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ kat -\/ double, $\vert$ $\vert$ Wypelnia macierz wartosciami $\vert$. 
+
+$\vert$ 
+
+Definition at line 268 of file matrix.\+h.
+
+\mbox{\Hypertarget{class_matrix_ab2c5244c271044a9d7f8766728209f1f}\label{class_matrix_ab2c5244c271044a9d7f8766728209f1f}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!zaladujy@{zaladujy}}
+\index{zaladujy@{zaladujy}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{zaladujy()}{zaladujy()}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+void \mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$\+::zaladujy (\begin{DoxyParamCaption}\item[{double}]{kat }\end{DoxyParamCaption})}
+
+
+
+Metoda macierzy $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ kat -\/ double, $\vert$ $\vert$ Wypelnia macierz wartosciami $\vert$. 
+
+$\vert$ 
+
+Definition at line 247 of file matrix.\+h.
+
+\mbox{\Hypertarget{class_matrix_ae42a79944ea2dd479bd8aeb9b2a127e3}\label{class_matrix_ae42a79944ea2dd479bd8aeb9b2a127e3}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!zaladujz@{zaladujz}}
+\index{zaladujz@{zaladujz}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{zaladujz()}{zaladujz()}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+void \mbox{\hyperlink{class_matrix}{Matrix}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$\+::zaladujz (\begin{DoxyParamCaption}\item[{double}]{kat }\end{DoxyParamCaption})}
+
+
+
+Metoda macierzy $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ kat -\/ double, $\vert$ $\vert$ Wypelnia macierz wartosciami $\vert$. 
+
+$\vert$ 
+
+Definition at line 226 of file matrix.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/patryk/\+Pulpit/zad5\+\_\+3-\/\+Patidzon/inc/\mbox{\hyperlink{matrix_8h}{matrix.\+h}}\end{DoxyCompactItemize}

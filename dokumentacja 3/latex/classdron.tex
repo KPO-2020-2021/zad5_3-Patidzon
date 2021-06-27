@@ -1,0 +1,236 @@
+\hypertarget{classdron}{}\doxysection{dron Class Reference}
+\label{classdron}\index{dron@{dron}}
+
+
+~\newline
+ klasa niezbedne metody i pola wartosci aby modelowac drona  
+
+
+
+
+{\ttfamily \#include $<$dron.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdron_a57fc871e9aac04caff0229f233014120}{dron}} (int nr)
+\item 
+void \mbox{\hyperlink{classdron_a757144c8ddd8fe952d46ae85404860dd}{tworzdrona}} (int nr)
+\begin{DoxyCompactList}\small\item\em Metoda klasy dron. $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ nr-\/numer drona $\vert$ $\vert$ tworzy drona w oparciu o jego numer nr i wbudowane przesuniecie $\vert$. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdron_a3ce25e6da155b43b2bcf36bbe46f37dd}{przemiescdron}} ()
+\item 
+void \mbox{\hyperlink{classdron_a419e2f9d75926b103d7e0a6faff947f0}{lotzwiadowczy}} (\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} Lacze)
+\begin{DoxyCompactList}\small\item\em Metoda klasy dron. Nie dziala $\vert$ $\vert$ animuje lot zwiadowczy drona $\vert$. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdron_abf9d1bac7c5c7efc279bc4f526d42c2c}{ustawparametry}} (\mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$ polozenie2, double kat)
+\begin{DoxyCompactList}\small\item\em Metoda klasy dron. $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ polozenie2-\/aktualne przesuniecie $\vert$ $\vert$ kat aktualny kat $\vert$ $\vert$ przekazuje parametry dronowi $\vert$. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdron_a746f17ce078da9eb88560a29f2aa81a1}{ustawpolozeniepoczatkowe}} (\mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$ polozeniepoczatkowe1)
+\begin{DoxyCompactList}\small\item\em Metoda klasy dron. $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ polozeniepoczatkowe1-\/ustawaia polozenie poczatkowe $\vert$ $\vert$ przekazuje parametry dronowi $\vert$. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdron_a412a29f8b5b44daa1e4ef7c0098c68b6}{przesundron}} ()
+\begin{DoxyCompactList}\small\item\em Metoda klasy dron. $\vert$ $\vert$ przesuwa drona do nowych wspolrzednych drona $\vert$. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdron_aebf10ce4ba25127733c1cafee667c247}{obrocdron}} ()
+\begin{DoxyCompactList}\small\item\em Metoda klasy dron. $\vert$ $\vert$ przesuwa i obraca drona do nowych wspolrzednych drona $\vert$. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdron_a4fe83415726ebc798e1ac6b37341ec70}{animacjalotu}} (\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} Lacze)
+\begin{DoxyCompactList}\small\item\em Metoda klasy dron. $\vert$ $\vert$ animuje przelot drona dla gnuplota $\vert$. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdron_ae7e9f795ee1e150acb524237cf909662}{Dodaj\+Trase\+Przelotu}} (\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&Lacze, int kat, double dlugosclotu)
+\begin{DoxyCompactList}\small\item\em Metoda klasy dron. $\vert$ $\vert$ atgumenty\+: $\vert$ $\vert$ kat -\/kat obrotu podawany przez uzytkownika $\vert$ $\vert$ dlugosclotu -\/dlugosc lotu podawana przez uzytkownika $\vert$ $\vert$ rysuje trase przelotu drona dla gnuplota $\vert$. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classdron_a355aa1794b5867a808b3c30477f033c6}{podajkat}} ()
+\item 
+\mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$ \mbox{\hyperlink{classdron_a4df7ad5c7e7c97ce90c59886a5e2ce98}{podajpolozeniepoczatkowe}} ()
+\item 
+\mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$ \mbox{\hyperlink{classdron_a557700c9c7027ec164db13004000a094}{podajpolozenie}} ()
+\item 
+bool \mbox{\hyperlink{classdron_a2faf1d2a131ade3622b2fdaa0c129ed0}{sprawdzladowanie}} (\mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$ polozenie1)
+\begin{DoxyCompactList}\small\item\em Metoda klasy dron. $\vert$ $\vert$ atgumenty\+: $\vert$ $\vert$ polozenie1-\/polozenie aktywnego drona $\vert$ $\vert$ Metoda porownuje polozenie aktywnego drona ze swoim $\vert$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+~\newline
+ klasa niezbedne metody i pola wartosci aby modelowac drona 
+
+
+
+Definition at line 33 of file dron.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdron_a57fc871e9aac04caff0229f233014120}\label{classdron_a57fc871e9aac04caff0229f233014120}} 
+\index{dron@{dron}!dron@{dron}}
+\index{dron@{dron}!dron@{dron}}
+\doxysubsubsection{\texorpdfstring{dron()}{dron()}}
+{\footnotesize\ttfamily dron\+::dron (\begin{DoxyParamCaption}\item[{int}]{nr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 64 of file dron.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdron_a4fe83415726ebc798e1ac6b37341ec70}\label{classdron_a4fe83415726ebc798e1ac6b37341ec70}} 
+\index{dron@{dron}!animacjalotu@{animacjalotu}}
+\index{animacjalotu@{animacjalotu}!dron@{dron}}
+\doxysubsubsection{\texorpdfstring{animacjalotu()}{animacjalotu()}}
+{\footnotesize\ttfamily void dron\+::animacjalotu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}}}]{Lacze }\end{DoxyParamCaption})}
+
+
+
+Metoda klasy dron. $\vert$ $\vert$ animuje przelot drona dla gnuplota $\vert$. 
+
+$\vert$ 
+
+Definition at line 194 of file dron.\+h.
+
+\mbox{\Hypertarget{classdron_ae7e9f795ee1e150acb524237cf909662}\label{classdron_ae7e9f795ee1e150acb524237cf909662}} 
+\index{dron@{dron}!DodajTrasePrzelotu@{DodajTrasePrzelotu}}
+\index{DodajTrasePrzelotu@{DodajTrasePrzelotu}!dron@{dron}}
+\doxysubsubsection{\texorpdfstring{DodajTrasePrzelotu()}{DodajTrasePrzelotu()}}
+{\footnotesize\ttfamily void dron\+::\+Dodaj\+Trase\+Przelotu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} \&}]{Lacze,  }\item[{int}]{kat,  }\item[{double}]{dlugosclotu }\end{DoxyParamCaption})}
+
+
+
+Metoda klasy dron. $\vert$ $\vert$ atgumenty\+: $\vert$ $\vert$ kat -\/kat obrotu podawany przez uzytkownika $\vert$ $\vert$ dlugosclotu -\/dlugosc lotu podawana przez uzytkownika $\vert$ $\vert$ rysuje trase przelotu drona dla gnuplota $\vert$. 
+
+$\vert$ 
+
+Definition at line 348 of file dron.\+h.
+
+\mbox{\Hypertarget{classdron_a419e2f9d75926b103d7e0a6faff947f0}\label{classdron_a419e2f9d75926b103d7e0a6faff947f0}} 
+\index{dron@{dron}!lotzwiadowczy@{lotzwiadowczy}}
+\index{lotzwiadowczy@{lotzwiadowczy}!dron@{dron}}
+\doxysubsubsection{\texorpdfstring{lotzwiadowczy()}{lotzwiadowczy()}}
+{\footnotesize\ttfamily void dron\+::lotzwiadowczy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}}}]{Lacze }\end{DoxyParamCaption})}
+
+
+
+Metoda klasy dron. Nie dziala $\vert$ $\vert$ animuje lot zwiadowczy drona $\vert$. 
+
+$\vert$ 
+
+Definition at line 276 of file dron.\+h.
+
+\mbox{\Hypertarget{classdron_aebf10ce4ba25127733c1cafee667c247}\label{classdron_aebf10ce4ba25127733c1cafee667c247}} 
+\index{dron@{dron}!obrocdron@{obrocdron}}
+\index{obrocdron@{obrocdron}!dron@{dron}}
+\doxysubsubsection{\texorpdfstring{obrocdron()}{obrocdron()}}
+{\footnotesize\ttfamily void dron\+::obrocdron (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda klasy dron. $\vert$ $\vert$ przesuwa i obraca drona do nowych wspolrzednych drona $\vert$. 
+
+$\vert$ 
+
+Definition at line 169 of file dron.\+h.
+
+\mbox{\Hypertarget{classdron_a355aa1794b5867a808b3c30477f033c6}\label{classdron_a355aa1794b5867a808b3c30477f033c6}} 
+\index{dron@{dron}!podajkat@{podajkat}}
+\index{podajkat@{podajkat}!dron@{dron}}
+\doxysubsubsection{\texorpdfstring{podajkat()}{podajkat()}}
+{\footnotesize\ttfamily double dron\+::podajkat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 57 of file dron.\+h.
+
+\mbox{\Hypertarget{classdron_a557700c9c7027ec164db13004000a094}\label{classdron_a557700c9c7027ec164db13004000a094}} 
+\index{dron@{dron}!podajpolozenie@{podajpolozenie}}
+\index{podajpolozenie@{podajpolozenie}!dron@{dron}}
+\doxysubsubsection{\texorpdfstring{podajpolozenie()}{podajpolozenie()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector}{Vector}}$<$\mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}}$>$ dron\+::podajpolozenie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 59 of file dron.\+h.
+
+\mbox{\Hypertarget{classdron_a4df7ad5c7e7c97ce90c59886a5e2ce98}\label{classdron_a4df7ad5c7e7c97ce90c59886a5e2ce98}} 
+\index{dron@{dron}!podajpolozeniepoczatkowe@{podajpolozeniepoczatkowe}}
+\index{podajpolozeniepoczatkowe@{podajpolozeniepoczatkowe}!dron@{dron}}
+\doxysubsubsection{\texorpdfstring{podajpolozeniepoczatkowe()}{podajpolozeniepoczatkowe()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector}{Vector}}$<$\mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}}$>$ dron\+::podajpolozeniepoczatkowe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 58 of file dron.\+h.
+
+\mbox{\Hypertarget{classdron_a3ce25e6da155b43b2bcf36bbe46f37dd}\label{classdron_a3ce25e6da155b43b2bcf36bbe46f37dd}} 
+\index{dron@{dron}!przemiescdron@{przemiescdron}}
+\index{przemiescdron@{przemiescdron}!dron@{dron}}
+\doxysubsubsection{\texorpdfstring{przemiescdron()}{przemiescdron()}}
+{\footnotesize\ttfamily void dron\+::przemiescdron (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdron_a412a29f8b5b44daa1e4ef7c0098c68b6}\label{classdron_a412a29f8b5b44daa1e4ef7c0098c68b6}} 
+\index{dron@{dron}!przesundron@{przesundron}}
+\index{przesundron@{przesundron}!dron@{dron}}
+\doxysubsubsection{\texorpdfstring{przesundron()}{przesundron()}}
+{\footnotesize\ttfamily void dron\+::przesundron (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda klasy dron. $\vert$ $\vert$ przesuwa drona do nowych wspolrzednych drona $\vert$. 
+
+$\vert$ 
+
+Definition at line 145 of file dron.\+h.
+
+\mbox{\Hypertarget{classdron_a2faf1d2a131ade3622b2fdaa0c129ed0}\label{classdron_a2faf1d2a131ade3622b2fdaa0c129ed0}} 
+\index{dron@{dron}!sprawdzladowanie@{sprawdzladowanie}}
+\index{sprawdzladowanie@{sprawdzladowanie}!dron@{dron}}
+\doxysubsubsection{\texorpdfstring{sprawdzladowanie()}{sprawdzladowanie()}}
+{\footnotesize\ttfamily bool dron\+::sprawdzladowanie (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$}]{polozenie1 }\end{DoxyParamCaption})}
+
+
+
+Metoda klasy dron. $\vert$ $\vert$ atgumenty\+: $\vert$ $\vert$ polozenie1-\/polozenie aktywnego drona $\vert$ $\vert$ Metoda porownuje polozenie aktywnego drona ze swoim $\vert$. 
+
+$\vert$ 
+
+Definition at line 383 of file dron.\+h.
+
+\mbox{\Hypertarget{classdron_a757144c8ddd8fe952d46ae85404860dd}\label{classdron_a757144c8ddd8fe952d46ae85404860dd}} 
+\index{dron@{dron}!tworzdrona@{tworzdrona}}
+\index{tworzdrona@{tworzdrona}!dron@{dron}}
+\doxysubsubsection{\texorpdfstring{tworzdrona()}{tworzdrona()}}
+{\footnotesize\ttfamily void dron\+::tworzdrona (\begin{DoxyParamCaption}\item[{int}]{nr }\end{DoxyParamCaption})}
+
+
+
+Metoda klasy dron. $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ nr-\/numer drona $\vert$ $\vert$ tworzy drona w oparciu o jego numer nr i wbudowane przesuniecie $\vert$. 
+
+$\vert$ 
+
+Definition at line 75 of file dron.\+h.
+
+\mbox{\Hypertarget{classdron_abf9d1bac7c5c7efc279bc4f526d42c2c}\label{classdron_abf9d1bac7c5c7efc279bc4f526d42c2c}} 
+\index{dron@{dron}!ustawparametry@{ustawparametry}}
+\index{ustawparametry@{ustawparametry}!dron@{dron}}
+\doxysubsubsection{\texorpdfstring{ustawparametry()}{ustawparametry()}}
+{\footnotesize\ttfamily void dron\+::ustawparametry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$}]{polozenie2,  }\item[{double}]{kat }\end{DoxyParamCaption})}
+
+
+
+Metoda klasy dron. $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ polozenie2-\/aktualne przesuniecie $\vert$ $\vert$ kat aktualny kat $\vert$ $\vert$ przekazuje parametry dronowi $\vert$. 
+
+$\vert$ 
+
+Definition at line 111 of file dron.\+h.
+
+\mbox{\Hypertarget{classdron_a746f17ce078da9eb88560a29f2aa81a1}\label{classdron_a746f17ce078da9eb88560a29f2aa81a1}} 
+\index{dron@{dron}!ustawpolozeniepoczatkowe@{ustawpolozeniepoczatkowe}}
+\index{ustawpolozeniepoczatkowe@{ustawpolozeniepoczatkowe}!dron@{dron}}
+\doxysubsubsection{\texorpdfstring{ustawpolozeniepoczatkowe()}{ustawpolozeniepoczatkowe()}}
+{\footnotesize\ttfamily void dron\+::ustawpolozeniepoczatkowe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ \mbox{\hyperlink{size_8h_a0ae4b10cd6576f2ccf0da832de940dae}{S\+I\+ZE}} $>$}]{polozeniepoczatkowe1 }\end{DoxyParamCaption})}
+
+
+
+Metoda klasy dron. $\vert$ $\vert$ Argumenty\+: $\vert$ $\vert$ polozeniepoczatkowe1-\/ustawaia polozenie poczatkowe $\vert$ $\vert$ przekazuje parametry dronowi $\vert$. 
+
+$\vert$ 
+
+Definition at line 124 of file dron.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/patryk/\+Pulpit/zad5\+\_\+3-\/\+Patidzon/inc/\mbox{\hyperlink{dron_8h}{dron.\+h}}\end{DoxyCompactItemize}

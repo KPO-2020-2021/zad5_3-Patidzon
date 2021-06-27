@@ -1,0 +1,15 @@
+digraph "/home/patryk/Pulpit/zad5_3-Patidzon/inc/example.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="/home/patryk/Pulpit\l/zad5_3-Patidzon/inc\l/example.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="/home/patryk/Pulpit\l/zad5_3-Patidzon/app\l/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$app_2main_8cpp.html",tooltip="Przykład animacji przelotu drona."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="/home/patryk/Pulpit\l/zad5_3-Patidzon/src\l/example.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$example_8cpp.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="/home/patryk/Pulpit\l/zad5_3-Patidzon/tests\l/dummy.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dummy_8cpp.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="/home/patryk/Pulpit\l/zad5_3-Patidzon/tests\l/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tests_2main_8cpp.html",tooltip=" "];
+}
