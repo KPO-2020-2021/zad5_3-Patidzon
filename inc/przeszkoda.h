@@ -280,9 +280,9 @@ int przeszkoda::podajnr(){
 bool przeszkoda::sprawdzladowanie(Vector<SIZE> polozenie1){
 double x,x1,x2,y,y1,y2;
 x=polozenie1[0];
-std::cout<<x<<std::endl;
+//std::cout<<x<<std::endl;
 y=polozenie1[1];
-std::cout<<y<<std::endl;
+//std::cout<<y<<std::endl;
 x1=wierzcholki[13][0];
 // usleep(2000000); // 0.1 ms
 //std::cout<<x1<<std::endl;
@@ -296,11 +296,8 @@ x1=x1-15;
 y1=y1-15;
 x2=x2+15;
 y2=y2+15;
-std::cout<<x1<<std::endl;
-std::cout<<x2<<std::endl;
-std::cout<<y1<<std::endl;
-std::cout<<y2<<std::endl;
-usleep(2000000);
+
+
 if (x>x1&&x<x2&&y>y1&&y<y2)
 {
 std::cout<<"kolizja z "<<nazwa<<std::endl;
