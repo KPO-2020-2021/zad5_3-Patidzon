@@ -43,7 +43,7 @@ private:
     Vector<SIZE> polozenierotorow[4]={wek1,wek2,wek3,wek4};
     int nrdrona;
 public:
-  
+  dron(int nr);
   void  tworzdrona(int nr);
   void  przemiescdron(/*Vector<SIZE> przesuniecie*/);
  
@@ -56,6 +56,11 @@ public:
   void DodajTrasePrzelotu(PzG::LaczeDoGNUPlota &Lacze,int kat,double dlugosclotu);//dodaje trase przelotu
 };
 
+
+dron::dron(int nr){
+tworzdrona(nr);
+
+}
 /*!
 *****************************************************************************
  | \brief Metoda klasy dron.                                                 |
@@ -64,6 +69,7 @@ public:
  |     tworzy drona w oparciu o jego numer nr i wbudowane przesuniecie                                     |
  */
 void dron::tworzdrona(int nr){
+  Vector<SIZE> V11=V3;
   nrdrona=nr;
   int j=0;
   polozeniepoczatkowe=V2*(nr+1); 
@@ -81,7 +87,9 @@ for (unsigned int Idx = 0; NazwyPlikowWlasciwychrotory[nrdrona][Idx] != nullptr;
 }
 for (unsigned int Idx = 0; NazwyPlikowWlasciwychkorpusy[nrdrona][Idx] != nullptr; ++Idx) {
  korpus.przekazparametrykonstrukcji(skalakorpus);
- korpus.ustawpolozeniepoczatkowe(V2+V3);
+ korpus.ustawpolozeniepoczatkowe(V2+V11);
+ V2-V11;
+ std::cout<<V2<<V11<<std::endl;
  korpus.zaladujwspwzor();
  korpus.Przesunwierzcholki();
  korpus.zapiszwsp(NazwyPlikowWlasciwychkorpusy[nrdrona][Idx]);
@@ -112,14 +120,18 @@ katorient=kat;
  */
 void dron::ustawpolozeniepoczatkowe(Vector<SIZE> polozeniepoczatkowe1){
 polozeniepoczatkowe=polozeniepoczatkowe1;
-  for (unsigned int Idx = 0; NazwyPlikowWlasciwychrotory[nrdrona][Idx] != nullptr; ++Idx) 
-{
-  rotory[Idx].ustawpolozeniepoczatkowe(polozeniepoczatkowe);
-}
+ Vector<SIZE> V14=V3;
+
   for (unsigned int Idx = 0; NazwyPlikowWlasciwychkorpusy[nrdrona][Idx] != nullptr; ++Idx)
 {
 korpus.ustawpolozeniepoczatkowe(polozeniepoczatkowe);
 }
+polozeniepoczatkowe1-V14;
+  for (unsigned int Idx = 0; NazwyPlikowWlasciwychrotory[nrdrona][Idx] != nullptr; ++Idx) 
+{
+  rotory[Idx].ustawpolozeniepoczatkowe(polozeniepoczatkowe1);
+}
+
 
 }
 /*!
@@ -180,7 +192,9 @@ void dron::animacjalotu(PzG::LaczeDoGNUPlota  Lacze){
   int kat=1,katbackup=katorient;
   double dlugosclotu;
   Vector<SIZE> V4=argumentsV10;
+  Vector<SIZE> V12=V3;
   Vector<SIZE> V6;
+   //Vector<SIZE> V11=V3;
    
   while ((kat%5)!=0)
   {
@@ -193,7 +207,7 @@ void dron::animacjalotu(PzG::LaczeDoGNUPlota  Lacze){
  /*wznoszenie*/
   for (int i = 0; i < 100; i=i+2)
   { 
-     V4=V4+V3;
+     V4=V4+V12;
     ustawparametry(V4,katbackup);
   
     obrocdron();
@@ -237,7 +251,7 @@ void dron::animacjalotu(PzG::LaczeDoGNUPlota  Lacze){
 /*opadanie*/
     for (int i = 100; i > 0; i=i-2)
   {
-     V4=V4-V3;
+     V4=V4-V12;
     ustawparametry(V4,katorient);
     obrocdron();
     usleep(100000); // 0.1 ms

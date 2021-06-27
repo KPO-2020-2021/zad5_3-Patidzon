@@ -29,6 +29,6 @@ protected:
    Vector<SIZE> polozenie=V1;
     Vector<SIZE> polozeniepoczatkowe;
 public:
-  
+
 };
 

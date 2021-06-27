@@ -48,6 +48,7 @@ public:
    void zapiszwsp (const char* nazwaplikuzapisu);
    void  podajparametry()const;
    int podajnr();
+
    //const const char* &WezNazwe()const{return nazwa;}
 };
 

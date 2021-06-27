@@ -91,17 +91,19 @@ int main()
 
 
   scena scena1;
-  dron dron[3];
+  scena1.dodajdrona(0);
+  scena1.dodajdrona(1);
+  /*dron dron[2];
   dron[0].tworzdrona(0);
-  dron[1].tworzdrona(1);
-   Lacze.Rysuj();
+  dron[1].tworzdrona(1);*/
+   /*Lacze.Rysuj();
   scena1.dodajprzeszkode(Lacze);
    Lacze.Rysuj();
     scena1.dodajprzeszkode(Lacze);
      Lacze.Rysuj();
     scena1.dodajprzeszkode(Lacze);
      Lacze.Rysuj();
-
+*/
   Lacze.Rysuj();
 
 
@@ -121,7 +123,7 @@ while (z!='k')
   std::cin>>z;
   switch (z)
   { case 'l':
-  dron[nr].animacjalotu(Lacze);
+ scena1.animujdrona(Lacze,nr);
   break;
   /*case 'z':
   dron[nr].lotzwiadowczy(Lacze);

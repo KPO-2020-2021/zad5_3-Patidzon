@@ -56,8 +56,8 @@ int nrprzeszkody=0;
     Vector<SIZE> skalarotor1=argumentsV6;
     Vector<SIZE> V2=argumentsV7;
      Vector<SIZE> V1=argumentsV8;
-     Vector<SIZE> V3=argumentsV9;
-     
+    
+      Vector<SIZE> V3=argumentsV9;
      Vector<SIZE> V5=argumentsV11;
      Vector<SIZE> V6=argumentsV12;
      Vector<SIZE> V7=argumentsV13;

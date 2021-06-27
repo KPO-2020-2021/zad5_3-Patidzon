@@ -39,12 +39,15 @@ class scena
 private:
     //dron drony[2];
  std::list<std::shared_ptr<przeszkoda>> Lst1;
+  std::list<std::shared_ptr<dron>> Lst2;
 public:
 //void wybierzdrona(int nrdrona);
     scena(/* args */);
     ~scena();
 void dodajprzeszkode(PzG::LaczeDoGNUPlota &Lacze);    
-void usunprzeszkode(PzG::LaczeDoGNUPlota &Lacze);    
+void usunprzeszkode(PzG::LaczeDoGNUPlota &Lacze);
+void dodajdrona(int nr); 
+void animujdrona(PzG::LaczeDoGNUPlota  &Lacze,int nr);   
 };
 
 scena::scena(/* args */)
@@ -104,5 +107,22 @@ std::cout<<i<<" ";
 (*it)->podajparametry();
 i++;
     }
+
+}
+
+void scena::dodajdrona(int nr){
+ Lst2.push_back(std::make_shared<dron>(nr));
+
+}
+
+void scena::animujdrona(PzG::LaczeDoGNUPlota &Lacze,int nr){
+auto it=Lst2.begin();
+if (nr==1)
+{
+ it++;
+}
+
+(*it)->animacjalotu(Lacze);
+
 
 }
