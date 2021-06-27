@@ -47,7 +47,8 @@ public:
 void dodajprzeszkode(PzG::LaczeDoGNUPlota &Lacze);    
 void usunprzeszkode(PzG::LaczeDoGNUPlota &Lacze);
 void dodajdrona(int nr); 
-void animujdrona(PzG::LaczeDoGNUPlota  &Lacze,int nr);   
+void animujdrona(PzG::LaczeDoGNUPlota  &Lacze,int nr);
+ void animacjalotu(PzG::LaczeDoGNUPlota  Lacze,int nr);
 };
 
 scena::scena(/* args */)
@@ -126,3 +127,95 @@ if (nr==1)
 
 
 }
+
+
+/*!
+*****************************************************************************
+ | \brief Metoda klasy dron.                                                 |
+ |     animuje przelot drona dla gnuplota                                |
+ */
+void scena::animacjalotu(PzG::LaczeDoGNUPlota  Lacze,int nr){
+
+  auto it=Lst2.begin();
+if (nr==1)
+{
+ it++;
+}
+  int kat=1,katbackup=(*it)->podajkat();
+  int katorient=(*it)->podajkat();
+
+  Vector<SIZE> polozeniepoczatkowe=(*it)->podajpolozeniepoczatkowe();
+  double dlugosclotu;
+  Vector<SIZE> V4=argumentsV10;
+  Vector<SIZE> V12=V3;
+  Vector<SIZE> V6;
+   //Vector<SIZE> V11=V3;
+   
+  while ((kat%5)!=0)
+  {
+     std::cout<<"podaj kat obrotu drona(wielokrotnosc 5"<<std::endl;
+  std::cin>>kat;
+  }
+  std::cout<<"podaj dlugosc lotu"<<std::endl;
+  std::cin>>dlugosclotu;
+  (*it)->DodajTrasePrzelotu(Lacze,kat,dlugosclotu);
+ /*wznoszenie*/
+  for (int i = 0; i < 100; i=i+2)
+  { 
+     V4=V4+V12;
+    (*it)->ustawparametry(V4,katbackup);
+  
+    (*it)->obrocdron();
+    usleep(100000); // 0.1 ms
+    Lacze.Rysuj();
+
+  }
+  /*obracanie*/
+  if (kat>=0)
+  {
+      for (int i=0; i <= kat; i+= 5) {
+    (*it)->ustawparametry(V4,katbackup+i);
+   (*it)->obrocdron();
+    usleep(100000);
+    Lacze.Rysuj();
+  }
+  }
+  else
+  {
+         std::cout << "kat ujemny ... " << std::endl;
+  for (int i=0; i >= kat; i-= 5) {
+    (*it)->ustawparametry(V4,katbackup+i);
+   (*it)->obrocdron();
+    usleep(100000);
+    Lacze.Rysuj();
+  }
+  }
+  
+
+/*przelot*/
+katorient=(*it)->podajkat();
+  Matrix<SIZE> macierz2=Matrix<SIZE>('z',katorient);
+    V6=macierz2*V5;
+  for (int i=0; i <= dlugosclotu; i+= 1) {
+ 
+    V4=V4+V6;
+    (*it)->ustawparametry(V4,katorient);
+   (*it)->obrocdron();
+    usleep(100000);
+    Lacze.Rysuj();
+  }
+/*opadanie*/
+    for (int i = 100; i > 0; i=i-2)
+  {
+     V4=V4-V12;
+    (*it)->ustawparametry(V4,katorient);
+    (*it)->obrocdron();
+    usleep(100000); // 0.1 ms
+    Lacze.Rysuj();
+  }   
+    Vector<SIZE> polozenie=(*it)->podajpolozenie();
+  (*it)->ustawpolozeniepoczatkowe((polozenie+polozeniepoczatkowe));
+    Lacze.UsunNazwePliku(PLIK_TRASY_PRZELOTU);
+  Lacze.Rysuj();
+}
+

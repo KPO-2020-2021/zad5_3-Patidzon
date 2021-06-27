@@ -48,7 +48,7 @@ public:
    void zapiszwsp (const char* nazwaplikuzapisu);
    void  podajparametry()const;
    int podajnr();
-
+   bool sprawdzladowanie(){std::cout<<"hej"<<std::endl;};
    //const const char* &WezNazwe()const{return nazwa;}
 };
 

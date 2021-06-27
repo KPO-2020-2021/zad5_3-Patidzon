@@ -54,6 +54,9 @@ public:
   void obrocdron();// obraca drona z uwzglednieniem rotacji 
   void animacjalotu(PzG::LaczeDoGNUPlota  Lacze);//tworzy animacje lotu dla gnuplota
   void DodajTrasePrzelotu(PzG::LaczeDoGNUPlota &Lacze,int kat,double dlugosclotu);//dodaje trase przelotu
+  double podajkat(){return katorient;}
+  Vector<SIZE> podajpolozeniepoczatkowe(){return polozeniepoczatkowe;}
+  Vector<SIZE> podajpolozenie(){return polozenie;}
 };
 
 

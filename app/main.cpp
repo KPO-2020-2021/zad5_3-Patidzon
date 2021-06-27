@@ -123,7 +123,7 @@ while (z!='k')
   std::cin>>z;
   switch (z)
   { case 'l':
- scena1.animujdrona(Lacze,nr);
+ scena1.animacjalotu(Lacze,nr);
   break;
   /*case 'z':
   dron[nr].lotzwiadowczy(Lacze);
