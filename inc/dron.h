@@ -57,6 +57,7 @@ public:
   double podajkat(){return katorient;}
   Vector<SIZE> podajpolozeniepoczatkowe(){return polozeniepoczatkowe;}
   Vector<SIZE> podajpolozenie(){return polozenie;}
+  bool sprawdzladowanie(Vector<SIZE> polozenie1);
 };
 
 
@@ -92,7 +93,6 @@ for (unsigned int Idx = 0; NazwyPlikowWlasciwychkorpusy[nrdrona][Idx] != nullptr
  korpus.przekazparametrykonstrukcji(skalakorpus);
  korpus.ustawpolozeniepoczatkowe(V2+V11);
  V2-V11;
- std::cout<<V2<<V11<<std::endl;
  korpus.zaladujwspwzor();
  korpus.Przesunwierzcholki();
  korpus.zapiszwsp(NazwyPlikowWlasciwychkorpusy[nrdrona][Idx]);
@@ -371,4 +371,29 @@ void dron::DodajTrasePrzelotu(PzG::LaczeDoGNUPlota &Lacze, int kat,double dlugos
    StrmWy <<tmp<< std::endl;
   Lacze.DodajNazwePliku(PLIK_TRASY_PRZELOTU);
  
+}
+
+/*!
+*****************************************************************************
+ | \brief Metoda klasy dron.                                                 |
+  |   atgumenty:                             |
+   |    polozenie1-polozenie aktywnego drona                            |
+   |  Metoda porownuje polozenie aktywnego drona ze swoim                            |
+ */
+bool dron::sprawdzladowanie(Vector<SIZE> polozenie1){
+Vector<SIZE> centrum=polozeniepoczatkowe;
+double x1=centrum[0];
+double y1=centrum[1];
+double x2=polozenie1[0];
+double y2=polozenie[1];
+double odleglosc1=sqrt(x1*x1+y1*y1);
+double odleglosc2=sqrt(x2*x2+y2*y2);
+std::cout<<odleglosc1<<std::endl;
+std::cout<<odleglosc2<<std::endl;
+if (fabs(odleglosc1-odleglosc2)<35)
+{std::cout<<"kolizja z dron "<<std::endl;
+usleep(2000000);
+  return true;
+}
+return false;
 }

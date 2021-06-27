@@ -96,14 +96,14 @@ int main()
   /*dron dron[2];
   dron[0].tworzdrona(0);
   dron[1].tworzdrona(1);*/
-   /*Lacze.Rysuj();
+   Lacze.Rysuj();
   scena1.dodajprzeszkode(Lacze);
    Lacze.Rysuj();
     scena1.dodajprzeszkode(Lacze);
      Lacze.Rysuj();
     scena1.dodajprzeszkode(Lacze);
      Lacze.Rysuj();
-*/
+
   Lacze.Rysuj();
 
 

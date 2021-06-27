@@ -49,6 +49,7 @@ void usunprzeszkode(PzG::LaczeDoGNUPlota &Lacze);
 void dodajdrona(int nr); 
 void animujdrona(PzG::LaczeDoGNUPlota  &Lacze,int nr);
  void animacjalotu(PzG::LaczeDoGNUPlota  Lacze,int nr);
+ bool sprawdzmiejsceladowania(Vector<SIZE> polozenie1,int nr);
 };
 
 scena::scena(/* args */)
@@ -111,11 +112,21 @@ i++;
 
 }
 
+/*!
+*****************************************************************************
+ | \brief Metoda klasy scena.                                                 |
+ |     dodaje drona do sceny    |
+ */
 void scena::dodajdrona(int nr){
  Lst2.push_back(std::make_shared<dron>(nr));
 
 }
 
+/*!
+*****************************************************************************
+ | \brief Metoda klasy scena.                                                 |
+ |     nie uzywana metoda (wersja beta) animacji drona dla sceny    |
+ */
 void scena::animujdrona(PzG::LaczeDoGNUPlota &Lacze,int nr){
 auto it=Lst2.begin();
 if (nr==1)
@@ -131,8 +142,9 @@ if (nr==1)
 
 /*!
 *****************************************************************************
- | \brief Metoda klasy dron.                                                 |
- |     animuje przelot drona dla gnuplota                                |
+ | \brief Metoda klasy scena.                                                 |
+ |     animuje przelot drona dla gnuplota    |
+ |      przekonwertowana metoda drona                      |
  */
 void scena::animacjalotu(PzG::LaczeDoGNUPlota  Lacze,int nr){
 
@@ -205,6 +217,30 @@ katorient=(*it)->podajkat();
     Lacze.Rysuj();
   }
 /*opadanie*/
+ Vector<SIZE> polozenie=(*it)->podajpolozenie();
+ Vector<SIZE> miejsceladowania=(polozenie+polozeniepoczatkowe);
+  while(sprawdzmiejsceladowania(miejsceladowania,nr)){
+      for (int i=0; i <= 10; i+= 1) {
+ 
+    V4=V4+V6;
+    (*it)->ustawparametry(V4,katorient);
+   (*it)->obrocdron();
+    usleep(100000);
+    Lacze.Rysuj();
+    
+  }
+polozenie=(*it)->podajpolozenie();
+   miejsceladowania=(polozenie+polozeniepoczatkowe); 
+ 
+ // exit(0);
+  }
+
+     std::cout<<" brak kolizji"<<std::endl;
+     
+ usleep(1000000); // 0.1 ms
+  
+  
+
     for (int i = 100; i > 0; i=i-2)
   {
      V4=V4-V12;
@@ -213,9 +249,42 @@ katorient=(*it)->podajkat();
     usleep(100000); // 0.1 ms
     Lacze.Rysuj();
   }   
-    Vector<SIZE> polozenie=(*it)->podajpolozenie();
+   polozenie=(*it)->podajpolozenie();
   (*it)->ustawpolozeniepoczatkowe((polozenie+polozeniepoczatkowe));
     Lacze.UsunNazwePliku(PLIK_TRASY_PRZELOTU);
   Lacze.Rysuj();
 }
 
+
+/*!
+*****************************************************************************
+ | \brief Metoda klasy scena.                                                 |
+ |     argumenty:   |
+  |    polozenie1 - aktualne polozenie aktywnego drona  |
+   |    wywoluje metody sprawdzania miejsca ladowania dla przeszkod i nieaktywnego drona  |
+ */
+bool scena::sprawdzmiejsceladowania(Vector<SIZE> polozenie1,int nr){
+    for (auto it = Lst1.begin(); it !=Lst1.end(); it++ ){     
+if ((*it)->sprawdzladowanie(polozenie1))
+{
+ return true;
+}
+    }
+ auto it2=Lst2.begin();
+ it2++;
+if (nr==1)
+{
+ it2--;
+}
+if ((*it2)->sprawdzladowanie(polozenie1))
+{
+ return true;
+}
+
+
+    
+    
+
+return false;
+
+}

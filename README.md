@@ -56,3 +56,6 @@ Wazne informacje:
 rotory drona nie kreca sie podczas lotu i wznoszenia
 Można maksymalnie dodać 9 przeszkod, ale usuniete przeszkody nie zwalniaja limitu(nie wiedzialem jak zapisywac przeszkody do wczesniejszych plikow).
 Poczatkowe przeszkody trzeba ustawic recznie(przerobienie konstruktorow zajeloby mi za duzo czasu )
+drony i przeszkody sa na osobnych listach(wybralem uproszcenie)
+Nowo tworzone preszkody moga powstac na istniejacych obiektach(w opisie zadania nie bylo o tym mowy(chyba), a ze wzgledu na skalowanie przeszkod i problem z ponownym wykorzystaniem plikow zapisu nie zdecydowalem sie na to )
+Przy drugim przemieszczeniu sie drona laduje on polowa korpusu "w ziemi" blad ten sie nie poglebia(kazde kolejne ladowanie konczy sie tak samo) i nie udalo mi sie znalezc jego przyczyny.
